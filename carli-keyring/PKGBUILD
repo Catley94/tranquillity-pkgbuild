@@ -1,15 +1,15 @@
 # Maintainers: Portergos Linux <portergoslinux@gmail.com>, EndeavourOS <info@endeavouros.com>
 
-pkgbase=carli-keyring
+pkgbase=tranquillity-keyring
 pkgname=("$pkgbase")
 destdir=/usr/share/pacman/keyrings
 pkgver=1.2
 pkgrel=1
-pkgdesc="Carli keyring"
+pkgdesc="tranquillity keyring"
 arch=('any')
-url="https://github.com/carli"
+url="https://github.com/tranquillity"
 license=('GPL3')
-source=('carli-keyring.install' 'carli.gpg' 'carli-revoked')
+source=('tranquillity-keyring.install' 'tranquillity.gpg' 'tranquillity-revoked')
 sha256sums=('SKIP'
             'SKIP'
             'SKIP')
@@ -17,7 +17,7 @@ install=$pkgbase.install
 package() {
     mkdir -p ${pkgdir}/$destdir
     cd ..
-    cp carli.gpg ${pkgdir}/$destdir
-    cp carli-revoked ${pkgdir}/$destdir
+    cp tranquillity.gpg ${pkgdir}/$destdir
+    cp tranquillity-revoked ${pkgdir}/$destdir
     install -dm 755 "${pkgdir}/$destdir"
 }
