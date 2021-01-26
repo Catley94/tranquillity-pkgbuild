@@ -2,7 +2,7 @@
 # Contributor: Erik Dubois <erik.dubois@gmail.com>
 pkgname=surfn-icons-git
 _pkgname=Surfn
-pkgver=9.7.1.r31.gb45e8c22
+pkgver=20.12.7.r9.g4f965653
 pkgrel=1
 epoch=1
 pkgdesc='Surfn, a colourful icon theme'
